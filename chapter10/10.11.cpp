@@ -37,7 +37,9 @@ int main()
     /*向算法传递isShorter函数
      *stable_sort可以保持等长的元素间的字典序
      */
-    stable_sort(words.begin(), words.end(), isShorter);
+    //stable_sort(words.begin(), words.end(), isShorter);
+    //使用lambda代替isShorter
+    stable_sort(words.begin(), words.end(), [](const string s1, const string s2){return s1.size() < s2.size();});
     auto iter = words.begin();
     while (iter != words.end()) {
         cout << *iter << " ";
