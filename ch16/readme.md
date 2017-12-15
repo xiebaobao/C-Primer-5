@@ -8,3 +8,9 @@
 
 [16.20.cpp](./16.20.cpp)
 
+### 练习16.21
+> 编写自己的DebugDelete版本  
+
+[DebugDelete.h](./DebugDelete.h) | [16.21.cpp](./16.21.cpp)
+
+
